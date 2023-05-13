@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  tuiboxGame
+//
+//  Created by douaiwan on 2023/5/10.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Toast.h"
+
+#define YFSCREENWIDTH       [UIScreen mainScreen].bounds.size.width
+#define YFSCREENHEIGHT      [UIScreen mainScreen].bounds.size.height
+
+
+
+
+#define CSLOCAL(x) (NSLocalizedString(x, nil))
+//字符串是否为空
+#define kISNullString(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+#endif /* PrefixHeader_pch */
